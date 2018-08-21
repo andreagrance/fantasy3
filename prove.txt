@@ -1,0 +1,40 @@
+ <div class="form-group row">
+                    <div class="col-xs-4">
+                      <label for="ex2">Apellido:</label>
+                      <input class="form-control" id="ex2" type="text">
+                    </div>
+                    <div class="col-xs-4">
+                      <label for="ex3">RUC:</label>
+                      <input class="form-control" id="ex3" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-xs-4">
+                      <label for="ex2">Direccion:</label>
+                      <input class="form-control" id="ex2" type="text">
+                    </div>
+                    <div class="col-xs-4">
+                      <label for="ex3">Telefono:</label>
+                      <input class="form-control" id="ex3" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-xs-4">
+                      <label for="ex2">Email:</label>
+                      <input class="form-control" id="ex2" type="text">
+                    </div>
+                    <div class="col-xs-4">
+                      <label for="ex3">Barrio:</label>
+                      <input class="form-control" id="ex3" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-xs-4">
+                      <label for="ex2">Ciudad:</label>
+                      <input class="form-control" id="ex2" type="text">
+                    </div>
+                    <div class="col-xs-4">
+                      <label for="ex3">Pais:</label>
+                      <input class="form-control" id="ex3" type="text">
+                    </div>
+                  </div>
