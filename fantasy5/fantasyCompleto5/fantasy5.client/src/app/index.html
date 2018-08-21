@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> DarioVaez | Sistema</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   <!-- daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/Style.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
+  <link rel="shortcut icon" href="dist/img/favicon.ico">
+  <!-- iCheck -->
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <span class="logo-mini"><b>Dv</b></span>
+      <span class="logo-lg"><b>Dario Vaez</b></span>
+    </a>
+    <!-- Logo -->
+
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!--Alertas dropdown-menu -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">2</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Tiene 2 Notificaciones</li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                      page and may cause design problems
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-red"></i> 5 new members joined
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">Ver Todos</a></li>
+            </ul>
+          </li>
+         <!--Alertas dropdown-menu -->
+
+          
+          <!-- User Account-->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Admin del Sistema</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Imagen de Usuario-->
+              <li class="user-header">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <p>
+                  Jesus Salvador - Admin del Sistema
+                </p>
+              </li>
+              <!-- Imagen de Usuario-->
+            </ul>
+          </li>
+           <!-- User Account-->  
+        
+          <!-- Boton de Configuracion -->
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#"><i class="fa fa-fw fa-user"></i>Editar Perfil</a>
+                  <a href="#"><i class="fa fa-fw fa-unlock-alt"></i>Cambiar Contraseña</a>
+                  <a href="#"><i class="fa fa-fw fa-power-off"></i>Cerrar Sesion</a>
+                </li>
+              </ul>
+          </li>
+          <!-- Boton de Configuracion -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <aside class="main-sidebar">
+    <section class="sidebar">
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Admin del Sistema</p>
+          <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
+        </div>
+      </div>
+
+      <ul class="sidebar-menu">
+        <li class="header">Sistema Dario Vaez</li>
+        <li class="active treeview">
+
+        <!-- Modulo de Sistemas -->
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Modulo de Sistema</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              <a href="#"><i class="fa fa-user"></i> Persona
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Nueva Persona</a></li>
+                </ul>
+            </li>
+              <li>
+              <a href="#"><i class="glyphicon glyphicon-user"></i> Usuario
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Nuevo Usuario</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registro de Usuario</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-shield"></i> Roles
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Nuevo Rol</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Asignar Rol</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-building-o"></i> Empresa
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Datos de la Empresa</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Ajuste de Impuestos</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registro de Impuestos</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-cog"></i> Mantenimiento
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Actualizacion de Producto</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Nueva Oferta</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registro de Ofertas</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-usd"></i> Tipo de Cambio
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Nueva Moneda</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Consultar Moneda</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Tipo de Cambio</a></li>
+                </ul>
+            </li>
+               <li>
+              <a href="#"><i class="fa fa-check-square"></i> Auditoria
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registro de Sesiones</a></li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Modulo de Sistemas -->
+
+        <!-- Modulo de Compras -->
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-shopping-cart"></i>
+            <span>Modulo de Compras</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              <a href="#"><i class="fa fa-sitemap"></i> Gestionar Pedidos
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                <li><a href="Paginas/Compras/Pedidos.html"><i class="fa fa-circle-o"></i>Lista Pedidos</a></li>
+                <li><a href="Paginas/Compras/SolicitarPedido.html"><i class="fa fa-circle-o"></i>Registrar Pedidos</a></li>
+                </ul>
+            </li>
+              <li>
+              <a href="#"><i class="fa fa-sitemap"></i> Gestionar Compra
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Proveedor</a></li>
+                  <li><a href="Paginas/Compras/Compras.html"><i class="fa fa-circle-o"></i>Lista Compra</a></li>
+                  <li><a href="Paginas/Compras/RegistrarCompra.html"><i class="fa fa-circle-o"></i>Registrar Compra</a></li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Modulo de Compras -->
+
+        <!-- Modulo de Ventas -->
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-line-chart"></i> <span>Modulo de Ventas</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+           <li>
+              <a href="#"><i class="fa fa-sitemap"></i> Gestionar Ventas
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Cliente</a></li>
+                  <li><a href="Paginas/Compras/Ventas.html"><i class="fa fa-circle-o"></i>Lista Venta</a></li>
+                  <li><a href="Paginas/Compras/RegistrarVenta.html"><i class="fa fa-circle-o"></i>Registrar Venta</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Devolucion</a></li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Modulo de Ventas -->
+
+        <!-- Modulo de Caja -->
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-sitemap"></i> <span>Modulo de Caja</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              <a href="#"><i class="fa fa-dropbox"></i> Gestionar Caja General
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Caja Sucursal</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Caja Punto de Venta</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dropbox"></i> Gestionar Caja
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Caja</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Asignar Usuario</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dropbox"></i> Gestionar Denominacion
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Denominacion</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dropbox"></i> Gestionar Concepto
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Concepto</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dropbox"></i> Gestionar Turno
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Turno</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dropbox"></i> Gestionar Movimientos
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Ingreso y Egresos</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dropbox"></i> Gestionar Libro de Caja
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Libro de Caja Sucursal</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Libro de Caja Punto de Venta</a></li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Modulo de Caja -->
+
+        <!-- Modulo de Almacen -->
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-edit"></i>
+            <span>Modulo de Almacen</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              <a href="#"><i class="fa fa-pie-chart"></i>Administrar Almacen
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="Paginas/Compras/Lote.html"><i class="fa fa-circle-o"></i>Lista Lote</a></li>
+                  <li><a href="Paginas/Compras/RegistrarLote.html"><i class="fa fa-circle-o"></i>Registrar Lote</a></li>
+                  <li><a href="Paginas/Compras/Productos.html"><i class="fa fa-circle-o"></i>Lista Producto</a></li>
+                  <li><a href="Paginas/Compras/AgregarProducto.html"><i class="fa fa-circle-o"></i>Registrar Producto</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Redistribuir Productos</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Generar Devoluciones</a></li>
+                 
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Modulo de Almacen -->
+
+
+        <!-- Modulo de Reportes -->
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-list-alt"></i> <span>Modulo de Reportes</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+          <li>
+              <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Reportes Pedido
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Reporte Pedidos</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Reportes Compras
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Reporte Compras</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Reportes Ventas
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Reporte Ventas</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Reporte de Vendedor</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Reportes Almacen
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Reporte Movimientos de Almacen</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Reportes Productos
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Reporte Productos</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Reportes Usuario
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Reporte de Usuario</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Reporte de Modelo y Funciones</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Reportes Auditoria
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Reporte de Auditoria</a></li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Modulo de Reportes -->
+
+        <li class="header">Sistema Dario Vaez</li>
+      </ul>
+    </section>
+  </aside>
+
+	<div class="content-wrapper">
+    	<section class="content-header">
+    	</section>
+    <!-- Main content -->
+
+
+<!-- Ventana - Modulo Sistemas -->
+<div class="col-md-9">
+  
+    <div class="col-md-6">
+      <div class="box box-solid box-default">
+        <div class="box-header with-border">
+          <i class="fa fa-laptop"></i>
+          <h3 class="box-title">Modulo de Sistemas</h3>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+              </button>
+            </div>
+        </div>
+            <div class="box-body">
+              <h4>Lorem ipsum</h4>
+            </div>
+        <div class="box-footer">
+            <form action="#" method="post">    
+            </form>
+        </div>
+      </div>
+    </div>
+
+<!-- Ventana - Modulo Sistemas -->
+
+<!-- Ventana - Modulo Compras -->
+    <div class="col-md-6">
+      <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+          <i class="fa fa-shopping-cart"></i>
+          <h3 class="box-title">Modulo de Compras</h3>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+              </button>
+            </div>
+        </div>
+            <div class="box-body">
+              <h4>Lorem ipsum</h4>
+            </div>
+        <div class="box-footer">
+            <form action="#" method="post">    
+            </form>
+        </div>
+      </div>
+    </div>
+<!-- Ventana - Modulo Compras  -->
+<!-- Ventana - Modulo Ventas -->
+    <div class="col-md-6">
+      <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+          <i class="fa fa-line-chart"></i>
+          <h3 class="box-title">Modulo de Ventas</h3>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+              </button>
+            </div>
+        </div>
+            <div class="box-body">
+              <h4>Lorem ipsum</h4>
+            </div>
+        <div class="box-footer">
+            <form action="#" method="post">    
+            </form>
+        </div>
+      </div>
+    </div>
+<!-- Ventana - Modulo Ventas  -->
+
+  <!-- Ventana - Modulo Caja -->
+    <div class="col-md-6">
+      <div class="box box-solid box-default">
+        <div class="box-header with-border">
+          <i class="fa fa-sitemap"></i>
+          <h3 class="box-title">Modulo de Caja</h3>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+              </button>
+            </div>
+        </div>
+            <div class="box-body">
+              <h4>Lorem ipsum</h4>
+            </div>
+        <div class="box-footer">
+            <form action="#" method="post">    
+            </form>
+        </div>
+      </div>
+    </div>
+<!-- Ventana - Modulo Caja  -->
+<!-- Ventana - Modulo Almacen -->
+    <div class="col-md-6">
+      <div class="box box-solid box-default">
+        <div class="box-header with-border">
+          <i class="glyphicon glyphicon-list-alt"></i>
+          <h3 class="box-title">Modulo de Almacen</h3>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+              </button>
+            </div>
+        </div>
+            <div class="box-body">
+              <h4>Lorem ipsum</h4>
+            </div>
+        <div class="box-footer">
+            <form action="#" method="post">    
+            </form>
+        </div>
+      </div>
+    </div>
+<!-- Ventana - Modulo Almacen  -->
+
+  <!-- Ventana - Modulo Reportes -->
+    <div class="col-md-6">
+      <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+          <i class="glyphicon glyphicon-list-alt"></i>
+          <h3 class="box-title">Modulo de Reportes</h3>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+              </button>
+            </div>
+        </div>
+            <div class="box-body">
+              <h4>Lorem ipsum</h4>
+            </div>
+        <div class="box-footer">
+            <form action="#" method="post">    
+            </form>
+        </div>
+      </div>
+    </div>
+<!-- Ventana - Modulo Reportes  -->
+</div>
+
+
+
+
+
+
+ <div class="col-md-3">
+
+          <!-- Profile Image -->
+          <div class="box box-primary">
+            <div class="box-body box-profile">
+              <img class="profile-user-img img-responsive img-circle" src="dist/img/logo.jpg" alt="User profile picture">
+
+              <h3 class="profile-username text-center">Dario Vaez</h3>
+              <ul class="list-group list-group-unbordered">
+                <li class="list-group-item">
+              <p class="text-muted text-center">ERP</p>
+
+              
+                  <b>Followers</b> <a class="pull-right">1,322</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Following</b> <a class="pull-right">543</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Friends</b> <a class="pull-right">13,287</a>
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- About Me Box -->
+          
+          <!-- /.box -->
+        </div>
+
+
+
+
+
+
+
+
+    <!-- Main content -->
+	</div>
+    <!-- /.content -->
+  </div>
+
+
+<!-- Pie de Pagina -->
+
+  <div class="control-sidebar-bg"></div>
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.js"></script>
+<!-- Morris.js charts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Main App -->
+<script src="dist/js/app.js"></script>
+<!-- Main dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<!-- Main for demo purposes -->
+
+
+<script>  
+
+
+//Date range picker
+    $('#reservation').daterangepicker();
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
+    //Date range as a button
+    $('#daterange-btn').daterangepicker(
+        {
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment()
+        },
+        function (start, end) {
+          $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+    );
+    //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    });
+</script>
+
+</body>
+</html>

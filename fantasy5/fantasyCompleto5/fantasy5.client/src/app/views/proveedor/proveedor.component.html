@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Proveedor</title>
+</head>
+<body>
+    
+        <div class="container">
+            <div class="register-card">
+                <h2 style="color:orangered">Proveedor</h2>
+                <p>Ingrese los datos del Proveedor:</p>
+                <form [formGroup]= "myForm" (submit)="doLogin()" class="register-form"></form>
+                  <div class="form-group row">
+                    <div class="col-xs-4">
+                      <label> ID Proveedor:</label>
+                      <input type="text" #idproveedor class="form-control"   name="idproveedor" formControlName="idproveedor">
+                    </div>
+                    <div class="col-xs-4">
+                      <label> Nombre:</label>
+                      <input type="text" #nombre class="form-control" name="nombre" formControlName="nombre">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>  
+              <br> <br>
+              <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4"><button  type="submit" class="btn btn-danger btn-block">Guardar</button>
+                  {{message}}
+                </div>
+                <div class="col-sm-4"></div>
+                <p id="demo"></p>
+              </div>  
+            </div>            
+</body>
+</html>

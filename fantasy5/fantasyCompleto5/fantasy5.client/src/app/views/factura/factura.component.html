@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Proveedor</title>
+</head>
+<body>
+        <div class="container">
+                <h2 style="color:orangered">Facturacion</h2>
+                <p>Ingrese los datos de la Factura:</p>
+                <form>
+                  <div class="form-group row">
+                    <div class="col-xs-3">
+                      <label for="ex2">ID Factura:</label>
+                      <input class="form-control" id="ex2" type="text">
+                    </div>
+                    <div class="col-xs-4">
+                      <label for="ex3">Nro de Factura:</label>
+                      <input class="form-control" id="ex3" type="text">
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="ex2">Fecha de emision:</label>
+                        <input class="form-control" id="ex2" type="text">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-xs-2">
+                        <label for="ex2">RUC:</label>
+                        <input class="form-control" id="ex3" type="text">
+                      </div>
+                      <div class="col-xs-5">
+                        <label for="ex3">Nota de Remision:</label>
+                        <input class="form-control" id="ex3" type="text">
+                      </div>
+                    <div class="col-xs-4">
+                      <label for="ex3">Condicion de Venta:</label>
+                      <input class="form-control" id="ex3" type="text">
+                    </div>
+                  </div>
+                
+                  <div class="form-group row">
+                    <div class="col-xs-5">
+                      <label for="ex2">Nombre o Razon Social:</label>
+                      <input class="form-control" id="ex2" type="text">
+                    </div>
+                    <div class="col-xs-4">
+                      <label for="ex3">Direccion:</label>
+                      <input class="form-control" id="ex3" type="text">
+                    </div>
+                    <div class="col-xs-2">
+                        <label for="ex2">Telefono:</label>
+                        <input class="form-control" id="ex2" type="text">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-xs-4">
+                      <label for="ex3">SUBTOTAL:</label>
+                      <input class="form-control" id="ex3" type="text">
+                    </div>
+                    <div class="col-xs-2">
+                  </div>
+                  <div class="col-xs-4">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/detalle']"> <h3>Detalle de la Factura</h3></a>
+                  </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-xs-4">
+                      <label for="ex2">TOTAL A PAGAR:</label>
+                      <input class="form-control" id="ex2" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-xs-4">
+                      <label for="ex3">IVA10%:</label>
+                      <input class="form-control" id="ex3" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-xs-4">
+                      <label for="ex3">TOTAL IVA:</label>
+                      <input class="form-control" id="ex3" type="text">
+                    </div>
+                  </div>
+                  
+                </form>
+              </div>
+              <br> <br>
+              <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4"><button type="button" class="btn">Guardar</button></div>
+                <div class="col-sm-4"></div>
+              </div>              
+</body>
+</html>
+

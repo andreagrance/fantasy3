@@ -1,0 +1,27 @@
+<div class="sidebar" color= "black">
+  <app-sidebar-header></app-sidebar-header>
+  <app-sidebar-form></app-sidebar-form>
+  <nav class="sidebar-nav">
+    <ul class="nav">
+      <li class="nav-title">
+        Menu
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']">  Dashboard </a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/proveedor']">  Proveedor </a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/factura']"> Factura </a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/cotizacion']"> Cotizacion</a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/eventos']"> Eventos </a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/catering']"> Catering </a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/clientes']"> Clientes </a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/contrato']"> Contrato </a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/compras']"> Compras </a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/alquiler']"> Alquiler </a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/reportes']"> Reportes </a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/detalle']"></a>
+      </li>
+    </ul>
+  </nav>
+  <app-sidebar-footer></app-sidebar-footer>
+  <app-sidebar-minimizer></app-sidebar-minimizer>
+</div>

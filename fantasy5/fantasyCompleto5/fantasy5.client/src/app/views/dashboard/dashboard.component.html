@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fantasy2</title>
+    </head>
+<body>
+   <div > 
+ <!-- <p class="titus">Seleccionar cliente</p>-->
+  <div class="form-group"> 
+    <label class="col-md-4 control-label" for="cliente">CLIENTE</label>
+      <div class="col-md-8 selectContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-user-o"></i></span>
+      <select  name="cliente"  type ="String" class="form-control selectpicker" id="cli">
+        <option value=" ">Seleccionar cliente</option>
+        <option *ngFor ="let cli of cliente">{{cli.nombre_cliente}}</option>
+      </select>
+    </div>
+  </div>
+  </div> 
+  </div>
+  <br>
+   <div class="row">
+      <div class="col-md-4 selectContainer">
+          <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user-o"></i></span>
+          <select  name="menu"  type ="String" class="form-control selectpicker" id="me">
+            <option value=" " >Seleccionar Menu</option>
+            <option *ngFor ="let me of menu"> {{me.nombre_menu}} </option>
+          </select>
+        </div>
+      </div>
+  <div class="col-sm-4"></div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"><p>FECHA  <input type="date" name="fecha" id="fecha" > </p></div>
+</div>
+<div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-user-o"></i></span>
+    <select  name="menu"  type ="number" class="form-control selectpicker" id="cos">
+      <option value=" " >Seleccionar Costo</option>
+      <option *ngFor ="let cos of menu"> {{cos.costo_menu}} </option>
+    </select>
+  </div>
+</div>
+
+
+
+ <!--<div>
+ <p>Datos del Comprobante</p>
+  <p>Serie: <input type="text" name="serie" size="30" > </p> 
+  <p>Nro de Comprobante: <input type="text" name="nrocomp" size="30" > </p> 
+</div>
+<br> <br>
+   <div>
+   <p>Datos del Articulo</p>
+   <p>Articulo: <input type="text" name="articulo" size="80" > </p> 
+   <p>Precio: <input type="text" name="precio" size="20" > Cantidad:<input type="text" name="razon" size="10" > </p>
+<br> <br>
+</div>-->
+
+
+<!--<div class="table-responsive"> 
+<table class="table table-bordered table-striped table-hover">
+  <thead>
+  <tr>
+    <th>Descripcion</th>
+    <th>Tipo de Articulo</th>
+    <th>Precio de Alquiler</th>
+    <th>Cantidad Disponible</th>
+    <th>Estado</th>
+  </tr>
+  </thead>
+  <tbody> -->
+
+<div class="form-group"> 
+    <label class="col-md-4 control-label" for="articulo"></label>
+ <div class="form-group">
+    <label for="cantidad">Cantidad de Personas</label>
+    <input type="number" id="cantidad"  placeholder="cantidad" formControlName="cantidad" name="cantidad" >
+  </div>
+  <div class="form-group">
+      <button type="button" class="btn" (click)="calcularcostototal()" >Calcular costo </button> <br><br><br>
+  </div>
+  <!--<button type="button" (click)="ver()" class="btn" id="ver">  </button>-->
+  <div class="form-group">
+  <label for="totalmenu" >Total:</label><p id="tot"> {{totalmenu}} </p>
+  </div> 
+
+    
+    <!--<tr *ngFor="let art of articulo">
+    <td> {{art.descripcion_articulo}} </td>
+     <td>{{art.tipoarticulo.tipoarticulo}}  </td>  Se debe especificar la tabla mas un punto mas el nombre del atributo que queremos
+     llamar 
+    <td> {{art.precio}} </td>
+    <td> {{art.cantidad_articulo}} </td>
+    <td> {{art.estado}} </td>
+     
+  </tr>  -->
+
+</div>
+<button type="button" class="btn" (click)="guardarpresu()" id="ver">   Guardar </button> <br><br><br>
+
+<h3 >GENERAR INFORME POR FECHA</h3>
+
+<p>Desde <input type="date" name="fecha" id="fecha2" ></p>
+<p>Hasta <input type="date" name="fecha" id="fecha3" ></p>
+
+
+<button type="button" class="btn" (click)="generar()" >   Generar Informe</button> <br><br><br>
+</body>
+</html>

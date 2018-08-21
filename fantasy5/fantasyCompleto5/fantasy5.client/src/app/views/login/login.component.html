@@ -1,0 +1,33 @@
+
+    <div class="wrapper">
+        <div class="register-background"> 
+            <div class="filter-black"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 ">
+                            <div class="register-card">
+                                <h3 class="title">Bienvenidos</h3>
+                                <form [formGroup]= "myForm" (submit)="doLogin()" class="register-form">
+                                    <label>Email</label>
+                                    <input type="email"  #email class="form-control" placeholder="Email" name="email" formControlName="email">
+
+                                    <label>Contraseña</label>
+                                    
+                                    <input type="password" #password class="form-control" placeholder="Contraseña" name="password" formControlName="password">
+                                    <button  type="submit" class="btn btn-danger btn-block">Iniciar Sesion</button>
+                                    {{message}}
+                                </form>
+                                <div class="forgot">
+                                    <a href="#" class="btn btn-simple btn-danger">Olvidaste tu contraseña?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            <div class="footer register-footer text-center">
+                    <h6>Fantasy Events <i class="fa fa-heart heart"></i> by AnJul</h6>
+            </div>
+        </div>
+    </div>     
+   
+
